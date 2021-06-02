@@ -1,5 +1,6 @@
 * {
-    box-sizing: border-box;    
+    box-sizing: border-box; 
+    margin: 0;   
 }
 /* .articulo {
     background-color: red;
@@ -12,6 +13,7 @@ body {
 
 header {
     background-color: #EAC926;
+    padding-bottom: 0.0157px;
     
 }
 
@@ -21,36 +23,46 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    
    
 }
 
 .logo {
     width: 50%;
-    height: 30px;
+    height: 37px;
     text-align: left;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     margin-left: 0px;
+    margin-top: 30px;
    
 }
 
 .search{
     display: inline;
-    text-align: center;
+    text-align: left;
     width: 50%;
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    display: flex;
+    margin-top: 30px;
+   
 }
 
 .search_bar {
-   width: 50%;
+   width: 75%;
    height: 30px;
    margin: 0;
-   border-radius: 7px;
+   border: none;
+  
+
+   
 }
 
 .search_button {
     height: 30px;
     margin: 0;
-    margin-right: 5px;
+    border: none;
+    color:  -internal-light-dark(black, white);
+    background-color: #ffffff;
 }
 
 .shopping_bar {
@@ -58,10 +70,11 @@ header {
     margin-top: 9.5px;
     margin-right: 20px;
     text-align: center;
-    width: 70%;
+    width: 100%;
     margin: auto;
     font-size: 13px;
-    margin-top: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .header_navbar {
@@ -80,21 +93,23 @@ header {
 }
 
 .burguer_button {
-    display: block;
+    /* display: block; */
     background-color:#03264C;
     color: #ffffff;
-    width: 30px;
+    
     margin:auto;
     text-align: center;
-    padding: 7px 0;
+    padding: 9px 0;
     border-radius: 6px;
     margin-top: 17px;
     margin-bottom: 20px;
+    width: 40px;
+    font-size: 20px;
 }
 
 .banner {
     width: 100%; 
-    height: 50px;
+    /* height: 50px; */
 }
 
 
@@ -216,61 +231,161 @@ footer p {
 @media (min-width: 361px) {
     
     .top_bar {
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
+        /* flex-wrap: nowrap; */
+        
        
     }
 
+/* --------------------------- */
+
+.logo,
+.search,
+.shopping_bar {
+    /* width: 50%;
+    height: 37px;
+    text-align: left;
+   
+    margin-left: 0px;
+    margin-top: 30px; */
+    width: 33.33%;
+    
+   
+}
+
+.logo {
+    margin-top: 20px;
+}
+
+.search{
+    /* display: inline;
+    text-align: left;
+    width: 50%;
+    display: flex;
+    margin-top: 30px; */ 
+    margin-top: 20px;
+    
+
+   
+}
+
+.search_bar {
+   /* width: 75%;
+   height: 30px;
+   margin: 0;
+   border: none; */
+   height: 12px;
+   font-size: 11px;
+  
+
+   
+}
+
+.search_button {
+    /* height: 30px;
+    margin: 0;
+    border: none;
+    color:  -internal-light-dark(black, white);
+    background-color: #ffffff; */
+    height: 12px;
+    font-size: 10px;
+    margin-left: 5px;
+
+}
+
+.shopping_bar,
+.header_navbar {
+    font-size: 10px;
+}
+
+.shopping_bar {
+    margin-top: 40px;
+}
+
+
+
+
+
+/* --------------------------- */
     .header_navbar {
-        display: block;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         
 
     }
 
     .header_navbar ul {
+        display: block;
+        width: 40%;
         display:flex;
-        flex-grow: 0.4;
-        justify-content: space-between;
-        
-
+        /* flex-grow: 0.4; */
+        justify-content: space-evenly;
+        margin-bottom: 15px;
+        margin-top: 30px;
 
     }
 
+    .header_sitebar {
+        position: relative;
+        left: -15px;
+    }
 
 
-
-
-
-
+    .header_loginbar {
+        position: relative;
+        left: 10px;
+    }
 
     .burguer_button {
+        
         display: none;   
     }
     
     .banner {
        /* width: none;  */
-       max-width: 360px;
+       /* max-width: 360px;
        display: block;
-       margin: auto;
+       margin: auto; */
     }
 
 
 
     /* ------------------------------------ */
 
+    .ultima-visita, 
+    .ofertas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #ebebeb;
+
+
+    }
+
+    
+
+    .articulo {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 50%;
+        /* border: 1px red solid; */
+        max-width: 260px;
+      
+    } 
+
+    .imagen_articulo {
+     width: 91%; 
+     /* border: 1px black solid; */
+     max-width: 150px;
+     
+
+    }
+
+
+
     .descripcion {
         display: block;
     } 
     /* .titulares, */
-    .articulo 
-    /* .borde_inferior */{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    } 
+   
 
     /* .borde_inferior {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -283,5 +398,13 @@ footer p {
 }
 
 @media (min-width: 769px) {
+
+    .articulo {
+        
+        width: 25%;
+        /* border: 1px red solid; */
+        /* max-width: 260px; */
+      
+    } 
    
 }
