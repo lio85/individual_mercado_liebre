@@ -115,10 +115,11 @@ header {
 
 .main {
     /* border: solid red 5px; */
-    width: 90%;
+    width: 90vw;
     margin: auto;
     border-right: 10px solid #ebebeb;  
     border-left: 10px solid #ebebeb; 
+    border-bottom: 10px solid #ebebeb; 
 }
 
 /* .articulo {
@@ -198,34 +199,72 @@ header {
     border-bottom: 10px solid #ebebeb; 
 } 
 
+/* ---------------------------- */
+
+/* footer */
+
 .main_footer {
-    margin-top: 70px;
+    /* margin-top: 70px; */
+    margin-bottom: 30px;
     color: #666;
+    border-right: #ebebeb 3.5px solid;
+    border-bottom: #ebebeb 3.5px solid;
+    border-left: #ebebeb 3.5px solid;
+    
+    /* border-left: 10px solid #ebebeb;  */
+    text-align: center;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; */
+    width: 90vw;
+    margin: auto;
+    /* padding: 0 28px 0 28px; */
+    margin-bottom: 15.5px;
+   
 }
 
-.footer_section { 
-    text-align: center; 
+.footer-content {
+    width: 76.8%;
+    margin: auto;
+    /* border: 1px black solid; */
+}
+
+footer section { 
+   
+    max-width: 243.453px;
+    /* border: 1px red solid; */
+    margin: auto;
+    /* width: 30vw; */
 }
 
 .footer_section i {
     background-color: #ffffff;
     color: #1259c3;
     font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 40px;
 }
 
 footer h4 {
-    font-size: 16px;
-    margin-top: 10px;
+    font-size: 14px;
+    /* margin-top: 10px; */
     margin-bottom: 0;
     color: #666;
 }
 
 footer p {
-    margin-top: 0;   
+    margin-top: 0; 
+    font-size: 10px;  
 }
 
 #copy {
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    text-align: left;
+    /* width: 100%; */
+    margin-top: 30px;
+    margin-left: 5%;
+    margin-bottom: 15px;
+    font-size: 10px; 
 }
 
 @media (min-width: 361px) {
@@ -394,7 +433,13 @@ footer p {
     .borde_inferior {
         /* articulos 1,3 y 4 */
         border-bottom: none; 
-    }    
+    }  
+    
+    /* .footer-content {
+        
+    } */
+
+
 }
 
 @media (min-width: 769px) {
@@ -404,7 +449,85 @@ footer p {
         width: 25%;
         /* border: 1px red solid; */
         /* max-width: 260px; */
-      
+    } 
+    
+    /* -------------------------------------------------------     */
+
+ 
+
+    .main_footer {
+        /* margin-top: 70px;
+        margin-bottom: 30px;
+        color: #666;
+        border: blue 1px solid;
+        text-align: center; */
+        /* border: 1px red solid; */
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 117px;
+        padding-bottom: 97px;
+        /* position: relative; */
+       
+       
+    }
+
+    .footer-content {
+        /* border: solid 1px red;*/
+        width: 90%;
+        display: flex;
+        
+        /* flex-wrap: wrap; */
+        justify-content: space-between;
+        /* max-width: 769px; */
+        /* margin: auto; */
+    }
+
+    
+    
+    .footer_section { 
+       
+        /* border: 1px blue solid; */
+        margin: 0;
+        padding: 0;
+        max-width: 300px;
+        /* display: flex;
+        flex-wrap: wrap; */
+        /* width: 25%; */
+        
+    }
+    
+    /* .footer_section i {
+        border: 1px green solid;
+    } */
+    /*
+    footer h4 {
+        
+        font-size: 10px;
+        
+        margin-bottom: 0;
+        color: #666;
+    }
+    
+    footer p {
+        margin-top: 0;
+        font-size: 9px;
+
+    }
+    */
+    #copy {
+    
+        /* text-align: left;
+        width: 100vw;
+        margin-top: 30px;
+        margin-left: 3vw;
+        font-size: 9px; */
+        position: relative;
+        margin-top: 3.5px;
+        margin-bottom: 3.5px;
+        top: 48.5px;
+        right: 3%;
+
     } 
    
 }

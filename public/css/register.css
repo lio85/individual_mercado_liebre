@@ -1,0 +1,17 @@
+/* * {
+    box-sizing: border-box; 
+    margin: 0;   
+} */
+
+
+.form {
+
+    border:1px solid red;   
+
+}
+
+.form-item {
+    
+    border: 1px solid black;
+
+}
