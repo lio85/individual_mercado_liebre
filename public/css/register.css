@@ -17,7 +17,7 @@
 
 }
 
-#general-container-form {
+.general-container-form {
     width: 177px;
     margin: auto;
 
@@ -33,12 +33,17 @@ form input {
     border-radius: 5px;
 }
 
+.input-form {
+    width: 100%;
+}
+
 .label-form {
     display: block;
     font-weight: bold;
     font-size: 14px;
     margin-bottom: 5px;
 }
+
 
 .form ul {
     list-style: none;
@@ -47,7 +52,7 @@ form input {
 
 }
 
-#div-button {
+.div-button {
     margin-bottom: 10px;
     background-color: #2499e3;
     padding: 5px 0;
@@ -57,13 +62,13 @@ form input {
     width: 177px;
 }
   
-#name-button {
+.name-button {
     display: block;
     text-align: center;
     color: #ffffff;
 }
   
-#add-picture {
+.add-picture {
     position: absolute;
     top: 0;
     right: 0;
@@ -75,10 +80,10 @@ form input {
   
 }
 
-#cont-buttons {
+.cont-buttons {
     width: 177px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .form-button {
@@ -91,6 +96,11 @@ form input {
     border: 0;
     box-shadow: 0px 3px 0px #1a71a9;
 
+}
+
+#login-boton-ingresar {
+    /* justify-content: center; */
+    width: 100%;
 }
 
 

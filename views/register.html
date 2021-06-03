@@ -57,162 +57,128 @@
 
 
         <form action="./" method="GET" class="form">
-            <div id="general-container-form">
+
+            <div class="general-container-form">
+
                 <div class="name-surname form-item">   
                     <!-- <label for="">Nombre y apellido</label> -->
-                    <input placeholder="Nombre y apellido" type="text" name="nombreUsuario" >
+                    <input placeholder="Nombre y apellido" type="text" name="name-surname" class="input-form">
                 </div>
                 
                 <div class="user-name form-item">   
                     <!-- <label for="">Nombre de usuari@</label> -->
-                    <input placeholder="Nombre de usuari@" type="text" name="nombreUsuario">
+                    <input placeholder="Nombre de usuari@" type="text" name="user-name" class="input-form">
                 </div>
                 
                 <div class="born-birthday form-item">   
-                    <label id="date-of-birth" class="label-form">Fecha de nacimiento</label>
-                    <input type="date" name="nombreUsuario" min="1890-01-01">
+                    <label class="date-of-birth label-form">Fecha de nacimiento</label>
+                    <input type="date" name="borning-day" min="1890-01-01" class="input-form">
                 </div>
                 
                 <div class="adress form-item">   
                     <!-- <label for="">Domicilio</label> -->
-                    <input placeholder="Domicilio" type="text" name="nombreUsuario">
+                    <input placeholder="Domicilio" type="text" name="adress" class="input-form">
                 </div>
                 
                 <div class="user-profile form-item">  
-                    <label class="label-form" for="">Perfil de usuario</label> 
+                    <label class="label-form">Perfil de usuario</label> 
                     <ul>
                         <li>                        
-                            <label><input type="radio" name="perfilUsuario" value="comprar"> Comprador</label>
+                            <label><input type="radio" name="user-profile" value="comprar"> Comprador</label>
                         </li>
                         <li>
-                            <label for=""><input type="radio" name="perfilUsuario" value="vender"> Vendedor</label>
+                            <label for=""><input type="radio" name="user-profile" value="vender"> Vendedor</label>
                         </li>    
                     </ul>
                 </div>
 
                 <div class="interest-categories form-item">
-                    <label class="label-form" for="">Categorías de interés</label>
+                    <label class="label-form">Categorías de interés</label>
                     <ul>                    
                         <li>                
-                        <label><input type="checkbox" name="categorias" value="categorias"> Electro </label>
+                        <label><input type="checkbox" name="interest-categories value" value="electro"> Electro </label>
                         </li>   
                         <li>
-                        <label></label><input type="checkbox" name="categorias" value="categorias"> Moda</label>
+                        <label></label><input type="checkbox" name="interest-categories" value="moda"> Moda</label>
                         </li>
                         <li>
-                        <label><input type="checkbox" name="categorias" value="categorias"> Hogar</label>
+                        <label><input type="checkbox" name="interest-categories" value="hogar"> Hogar</label>
                         </li>
                         <li>
-                        <label><input type="checkbox" name="categorias" value="categorias"> Juguetería</label>
+                        <label><input type="checkbox" name="interest-categories" value="Jugueteria"> Juguetería</label>
                         </li>
                         <li>
-                        <label><input type="checkbox" name="categorias" value="categorias"> Vida sana</label>
+                        <label><input type="checkbox" name="interest-categories" value="vida-sana"> Vida sana</label>
                         </li>   
                     </ul>        
                 </div>
 
+                <!-- -- -->
 
-
-                <div id="div-button" class="form-item">   
-                    <label id="name-button" for="">Añadir foto de perfil</label>
-                    <input type="file" name="nombreUsuario" accept=".jpg" id="add-picture">
+                <div class="div-button form-item">   
+                    <label class="name-button">Añadir foto de perfil</label>
+                    <input type="file" name="picture-profile" accept=".jpg" class="add-picture">
                 </div>
+
+                <!-- -- -->
                 
                 
                 
                 
                 <div class="password form-item">           
                     <!-- <label for="">Contraseña</label> -->
-                    <input placeholder="Contraseña" type="password" name="password">
+                    <input placeholder="Contraseña" type="password" name="password" class="input-form">
                 </div>
 
                 <div class="confirm-password form-item">   
                     <!-- <label for="">Confirmar contraseña</label> -->
-                    <input placeholder="Reingrese contraseña" type="password" name="password">
+                    <input placeholder="Reingrese contraseña" type="password" name="reinsert-password" class="input-form">
                 </div>
-                <div id="cont-buttons">
-                    <button class="form-button" type="submit">Enviar</button>
+
+                <div class="cont-buttons">
                     <button class="form-button" type="reset">Borrar</button>
+                    <button class="form-button" type="submit">Enviar</button>
+                    
                 </div>
             </div>
         </form>
 
 <!-- -------------------------------------------------------------------------------------------------- -->
 
-<footer class="main_footer">
-    <div class="footer-content"> 
-        <section class="footer_section">
-            <i class="fas fa-credit-card footer_icon"></i>
-            <h4>Pagá con tarjeta o efectivo</h4>
-            <p>
-                Con MercadoLiebreCash, tenés cuotas sin interés con tarjeta o efectivo en
-                puntos de pago. ¡Y siempre es seguro!
-            </p> 
-        </section>
-        <section class="footer_section">
-            <i class="fas fa-gift footer_icon"></i>
-            <h4>Envío gratis desde $ 2.500</h4>
-            <p>
-                Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-                productos. Es un beneficio de Mercado Puntos.
-            </p> 
-        </section>
-        <section class="footer_section">
-           <i class="fas fa-user-shield footer_icon"></i> 
-            <h4>                        
-                Seguridad, de principio a fin</h4>
-            <p>
-                ¿No te gusta? ¡Devolvelo! En MercadoLiebre, no hay nada que no puedas hacer,
-                porque estás siempre protegid@.
-            </p>                
-        </section>                
-    </div>
-    <section id="copy">
-        Copyright © 1999-2020 MercadoLiebre S.R.L.
-    </section>
-</footer>
+        <footer class="main_footer">
+            <div class="footer-content"> 
+                <section class="footer_section">
+                    <i class="fas fa-credit-card footer_icon"></i>
+                    <h4>Pagá con tarjeta o efectivo</h4>
+                    <p>
+                        Con MercadoLiebreCash, tenés cuotas sin interés con tarjeta o efectivo en
+                        puntos de pago. ¡Y siempre es seguro!
+                    </p> 
+                </section>
+                <section class="footer_section">
+                    <i class="fas fa-gift footer_icon"></i>
+                    <h4>Envío gratis desde $ 2.500</h4>
+                    <p>
+                        Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                        productos. Es un beneficio de Mercado Puntos.
+                    </p> 
+                </section>
+                <section class="footer_section">
+                <i class="fas fa-user-shield footer_icon"></i> 
+                    <h4>                        
+                        Seguridad, de principio a fin</h4>
+                    <p>
+                        ¿No te gusta? ¡Devolvelo! En MercadoLiebre, no hay nada que no puedas hacer,
+                        porque estás siempre protegid@.
+                    </p>                
+                </section>                
+            </div>
+            <section id="copy">
+                Copyright © 1999-2020 MercadoLiebre S.R.L.
+            </section>
+        </footer>
 
+    </body>
 
-
-
-
-
-
-
-
-
-
-<!-- <div class="div-button">   
-    <label for="" class="name-button">Foto de perfil</label>
-    <input type="file" name="nombreUsuario" accept=".jpg"  class="submit-boton">
-</div> -->
-    
-
-</body>
-
-
-    
 </html>
 
-
-
-
-
-
-<!-- Registro de Usuario (register.html ):
-■ Nombre y apellido
-■ Nombre de usuari@
-■ Fecha de nacimiento
-■ Domicilio
-■ Perfil del usuario (consultar a l@s usuari@s si quieren comprar o vender)
-■ Categorías de interés (puede elegir más de una)
-● Electro
-● Moda
-● Hogar
-● Juguetería
-● Vida sana
-■ Foto de usuario
-■ Contraseña
-■ Confirmar contraseña
-■ Botón de enviar que nos lleve a la página principal
-■ Botón de borrar todos los datos del formulario -->

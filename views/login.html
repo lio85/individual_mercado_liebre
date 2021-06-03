@@ -1,16 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Definitivo</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/styles.css">  
-</head>
-<body>
-    <form action="./" method="GET">  
+    <head>
+        <meta charset="UTF-8">  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Definitivo</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./css/styles.css">  
+        <link rel="stylesheet" href="./css/register.css">
+    </head>
+    <body>
+
+        <header>
+
+            <section class="top_bar">
+
+                <img class="logo" src="./images/logo-mercado-liebre.svg">
+                
+                <article class="search">
+                    <input class="search_bar" type="text" placeholder="Buscar productos, marcas">
+                    <button class="search_button"><i class="fas fa-search"></i></button>
+                </article>
+
+                <article class="shopping_bar">
+                    <i class="fas fa-hand-holding-usd">                        
+                    </i>Comprá en cuotas y sin tarjeta de crédito
+                </article>    
+
+            </section>
+                
+            <nav class="header_navbar">
+                <ul class="header_sitebar">
+                    <li><a href="">Ofertas</a></li>
+                    <li><a href="">Tiendas oficiales</a></li>
+                    <li><a href="">Vender</a></li>
+                    <li><a href="">Ayuda</a></li>
+                </ul>        
+                <ul class="header_loginbar">
+                    <li><a href="./register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                    <li><a href="./login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="">Mis compras <i class="fas fa-shopping-basket"></i></i></a></li>
+                </ul>
+            </nav>
+
+            <div class="burguer_button" href=""><i class="fas fa-bars"></i></div> 
+           
+
+        </header>
+
+
+
+<!-- -------------------------------------------------------------------------------------------------- -->
+
+
+
+
+        <form action="./" method="GET" class="form">
+            <div class="general-container-form">
+                
+                <div class="user-name form-item">   
+                    <!-- <label for="">Nombre de usuari@</label> -->
+                    <input placeholder="Nombre de usuari@" type="text" name="user-name" class="input-form">
+                </div>
+                                
+                <div class="password form-item">           
+                    <!-- <label for="">Contraseña</label> -->
+                    <input placeholder="Contraseña" type="password" name="password" class="input-form">
+                </div>
+
+                <div class="cont-buttons">                 
+                    <button class="form-button" id="login-boton-ingresar" type="submit">Ingresar</button>
+                </div>
+
+            </div>
+
+        </form>
+
+        <!-- <form action="./" method="GET">  
     <div>   
         <label for="">Nombre de usuari@</label>
         <input type="text" name="nombreUsuario">
@@ -20,11 +87,43 @@
         <input type="password" name="password">
     </div>
     <button type="submit">Enviar</button>
-</form>
+</form> -->
 
+<!-- -------------------------------------------------------------------------------------------------- -->
 
+        <footer class="main_footer">
+            <div class="footer-content"> 
+                <section class="footer_section">
+                    <i class="fas fa-credit-card footer_icon"></i>
+                    <h4>Pagá con tarjeta o efectivo</h4>
+                    <p>
+                        Con MercadoLiebreCash, tenés cuotas sin interés con tarjeta o efectivo en
+                        puntos de pago. ¡Y siempre es seguro!
+                    </p> 
+                </section>
+                <section class="footer_section">
+                    <i class="fas fa-gift footer_icon"></i>
+                    <h4>Envío gratis desde $ 2.500</h4>
+                    <p>
+                        Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                        productos. Es un beneficio de Mercado Puntos.
+                    </p> 
+                </section>
+                <section class="footer_section">
+                <i class="fas fa-user-shield footer_icon"></i> 
+                    <h4>                        
+                        Seguridad, de principio a fin</h4>
+                    <p>
+                        ¿No te gusta? ¡Devolvelo! En MercadoLiebre, no hay nada que no puedas hacer,
+                        porque estás siempre protegid@.
+                    </p>                
+                </section>                
+            </div>
+            <section id="copy">
+                Copyright © 1999-2020 MercadoLiebre S.R.L.
+            </section>
+        </footer>
 
+    </body>
 
-    
-</body>
 </html>
