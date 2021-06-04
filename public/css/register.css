@@ -11,7 +11,7 @@
     background-color: #dfe5ee;
     padding: 20px;
   
-    width: 90vw;
+    /* width: 90vw; */
     margin: auto;
     /* text-align: center; */
 
@@ -102,6 +102,13 @@ form input {
     /* justify-content: center; */
     width: 100%;
 }
+
+#login-boton-ingresar:hover {
+    background-color: #0022AA;
+}
+
+
+
 
 
 

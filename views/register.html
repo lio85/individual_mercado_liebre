@@ -62,29 +62,29 @@
 
                 <div class="name-surname form-item">   
                     <!-- <label for="">Nombre y apellido</label> -->
-                    <input placeholder="Nombre y apellido" type="text" name="name-surname" class="input-form">
+                    <input placeholder="Nombre y apellido" type="text" name="name-surname" class="input-form" minlength="2" maxlength="20" required>
                 </div>
                 
                 <div class="user-name form-item">   
                     <!-- <label for="">Nombre de usuari@</label> -->
-                    <input placeholder="Nombre de usuari@" type="text" name="user-name" class="input-form">
+                    <input placeholder="Nombre de usuari@" type="text" name="user-name" class="input-form" maxlength="10" required>
                 </div>
                 
                 <div class="born-birthday form-item">   
                     <label class="date-of-birth label-form">Fecha de nacimiento</label>
-                    <input type="date" name="borning-day" min="1890-01-01" class="input-form">
+                    <input type="date" name="borning-day" min="1890-01-01" class="input-form" required>
                 </div>
                 
                 <div class="adress form-item">   
                     <!-- <label for="">Domicilio</label> -->
-                    <input placeholder="Domicilio" type="text" name="adress" class="input-form">
+                    <input placeholder="Domicilio" type="text" name="adress" class="input-form" required>
                 </div>
                 
                 <div class="user-profile form-item">  
                     <label class="label-form">Perfil de usuario</label> 
                     <ul>
                         <li>                        
-                            <label><input type="radio" name="user-profile" value="comprar"> Comprador</label>
+                            <label><input type="radio" name="user-profile" value="comprar" checked> Comprador</label>
                         </li>
                         <li>
                             <label for=""><input type="radio" name="user-profile" value="vender"> Vendedor</label>
@@ -127,12 +127,12 @@
                 
                 <div class="password form-item">           
                     <!-- <label for="">Contraseña</label> -->
-                    <input placeholder="Contraseña" type="password" name="password" class="input-form">
+                    <input placeholder="Contraseña" type="password" name="password" class="input-form" minlength="6" maxlength="10" required>
                 </div>
 
                 <div class="confirm-password form-item">   
                     <!-- <label for="">Confirmar contraseña</label> -->
-                    <input placeholder="Reingrese contraseña" type="password" name="reinsert-password" class="input-form">
+                    <input placeholder="Reingrese contraseña" type="password" name="reinsert-password" class="input-form" minlength="6" maxlength="10" required> 
                 </div>
 
                 <div class="cont-buttons">
