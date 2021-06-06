@@ -139,6 +139,10 @@ header {
 
 }
 
+/* .articulo {
+    border: red 1px solid;
+} */
+
 .imagen_articulo {
     display: block;
     margin: auto;
@@ -335,6 +339,12 @@ footer p {
     
     .main {
         background-color: var(--gris-glaro);
+        
+    }
+
+    .titulares {
+        padding-top: 25px;
+
     }
 
     .ultima-visita, 
@@ -346,39 +356,46 @@ footer p {
     }
     
     .articulo {        
-        width: 50%;
+        width: 45%;
         max-width: 273.75px;
+        
+        /* min-height: ;
+        max-height: ; */
         /* border: red solid 1px; */
        /* display: flex;
        flex-wrap: wrap; */
        margin: auto;
+       background-color: #ffffff;
+       /* border: 1px solid red; */
+       margin-top: 20px;
+       
 
     } 
 
     .imagen_articulo {
-        width: 95%; 
+        /* border: red solid 1px; */
+        /* width: 90%;  */
         margin-bottom: 0;
         /* max-width: 100%; */
-        height: 253px;
+        /* height: 253px; */
         /* border: blue solid 1px; */
     }
 
     .detalle_articulo {
-        background-color: #ffffff;
+        /* background-color: #ffffff; */
         width: 95%;
         margin: auto; 
         /* height: 253px; */
         justify-content: start;
+        /* text-align: center;         */
     }
 
-    
-
     .precio {
-        width: 85px;
+        width: 80px;
     }
 
     .descuento {
-        width: 72px;
+        width: 55px;
         
     }
 
@@ -393,14 +410,27 @@ footer p {
 
 }
 
+.ofertas {
+    margin-bottom: 10px;
+}
+
 /*---------------------------------------------- @media (min-width: 769px) ------------------------------------------------*/
 
 @media (min-width: 769px) {
 
-/*---------------------------------------------- 769 main ------------------------------------------------*/    
+/*---- 769 main ------------------------------------------------*/    
+
+    .contenedor-titular,
+    .ultima-visita,
+    .ofertas {
+        max-width: none;
+        width: 95%;
+    }
+
+
 
     .articulo {   
-        width: 25%;
+        width: 22%;
         cursor: pointer;
         transition: all 500ms;
         height: fit-content;
