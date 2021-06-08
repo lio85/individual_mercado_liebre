@@ -1,20 +1,7 @@
-/* * {
-    box-sizing: border-box; 
-    margin: 0;   
-    padding: 0;
-} */
-
-
 .form {
-
-    /* border:1px solid red;   */
     background-color: #dfe5ee;
     padding: 20px;
-  
-    /* width: 90vw; */
     margin: auto;
-    /* text-align: center; */
-
 }
 
 .general-container-form {
@@ -24,7 +11,6 @@
 }
 
 .form-item {   
-    /* border: 1px solid black; */
     margin-bottom: 15px;
 }
 
@@ -44,12 +30,9 @@ form input {
     margin-bottom: 5px;
 }
 
-
 .form ul {
     list-style: none;
     padding-left: 0;
-
-
 }
 
 .div-button {
@@ -76,8 +59,7 @@ form input {
     bottom: 0;
     width: 100%;
     height: 100%;
-    opacity: 0;
-  
+    opacity: 0; 
 }
 
 .cont-buttons {
@@ -90,16 +72,13 @@ form input {
     background-color: #2499e3;
     padding: 5px 0;
     border-radius: 5px;
-    /* box-shadow: 0px 3px 0px #1a71a9; */
     color: #ffffff;
     width: 65px;
     border: 0;
     box-shadow: 0px 3px 0px #1a71a9;
-
 }
 
 #login-boton-ingresar {
-    /* justify-content: center; */
     width: 100%;
 }
 
